@@ -8085,6 +8085,10 @@ table {
 .info {
   color: #2f2f2f;
 }
+.info img {
+  width: 29px;
+  height: auto;
+}
 .info .icon {
   font-size: 35px;
 }
