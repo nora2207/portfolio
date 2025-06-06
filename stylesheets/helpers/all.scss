@@ -51,7 +51,7 @@
   width: 100%;
   position: fixed;
   background: #ffffff;
-  opacity: 0.8;
+  opacity: 0.9;
   border-bottom: 1px solid #f1f1f1;
   z-index: 1;
   padding-top: 5px;
@@ -82,7 +82,7 @@
     display: block;
     padding: 1em 0;
     text-align: center;
-    transition: all 0.3s;
+    transition: all 0.1s;
     &:hover {
       background: #2f2f2f;
       color: #fff;
