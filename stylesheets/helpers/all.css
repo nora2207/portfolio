@@ -7184,99 +7184,56 @@ table {
   transform: translate(-50%, -50%);
 }
 
-.content {
-  background: #f6f6f6;
-}
-
-.portfolio-image {
-  position: relative;
-  width: 100%;
-  padding: 0;
-  margin: 0;
-}
-.portfolio-image li {
-  float: left;
-  display: block;
-  position: relative;
-  overflow: hidden;
-  padding-top: 46%;
-}
-.portfolio-image li img {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-}
-.portfolio-image li:hover {
-  cursor: pointer;
-}
-.portfolio-image li:hover img {
-  -webkit-filter: grayscale(20%);
-  transform: scale(1.15);
-}
-
 .decription {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  padding: 20px;
-}
-.decription .image-bg {
-  background: rgba(255, 255, 255, 0.9);
-  width: 100%;
-  height: 100%;
-  display: inline-block;
-  transform: translate(-50%, -50%);
-  top: 50%;
-  left: 50%;
-  padding: 10px 0;
-  position: relative;
-  margin: 0 auto;
-  text-align: center;
+  transition: all 0.5s ease;
   opacity: 0;
-  transition: opacity, 1s;
-  letter-spacing: 1.5px;
 }
-.decription .image-bg:hover {
+.decription:hover {
   opacity: 1;
 }
+.decription .image-bg {
+  background: rgba(255, 255, 255, 0.8);
+  width: 100%;
+  height: 100%;
+}
 .decription .image-bg .desc {
-  position: absolute;
-  z-index: 1;
-  top: 45%;
-  left: 0;
-  right: 0;
-  text-align: center;
   color: #2f2f2f;
-  font-size: 24px;
+  font-size: 20px;
+  letter-spacing: 1.5px;
   font-weight: 700;
+}
+
+img:hover {
+  filter: grayscale(20%);
+  transform: scale(1.1);
+  transition: transform 0.5s ease;
 }
 
 .project-wrap {
   background: #f6f6f6;
 }
 .project-wrap .project {
-  width: 800px;
+  max-width: 800px;
+  width: 100%;
   margin: 0 auto;
 }
 
 .pic {
-  width: auto;
-  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  padding-bottom: 20px;
 }
 .pic img {
-  height: 100%;
-}
-
-.pic1 {
-  width: 500px;
+  width: 100%;
+  max-width: 150px;
   height: auto;
 }
-.pic1 img {
-  width: 100%;
+@media (min-width: 767px) {
+  .pic img {
+    max-width: 200px;
+  }
 }
 
 .info {
@@ -7338,11 +7295,16 @@ table {
 }
 
 .lightboxs {
-  padding: 40px 100px;
+  padding: 10px;
   background: #f6f6f6;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+}
+@media (min-width: 767px) {
+  .lightboxs {
+    padding: 40px 100px;
+  }
 }
 .lightboxs .photo {
   width: 200px;
